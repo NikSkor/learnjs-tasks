@@ -1,7 +1,7 @@
-'use strict'
+'use strict';
 
 class Clock {
-  constructor({template}) {
+  constructor({ template }) {
     this.template = template;
   }
 
@@ -34,6 +34,3 @@ class Clock {
     this.timer = setInterval(() => this.render(), 1000);
   }
 }
-
-let clock = new Clock({template: 'h:m:s'});
-clock.start();
